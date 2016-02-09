@@ -11,12 +11,4 @@ function invertAnswer(problem, answersArray) {
 	return false;
 }
 
-function canExecuteGenerator() {
-	return problem.result.toString().length > 1;
-}
-
-function canRegisterAnswer(problem, currentAnswersArray, reversedNumber) {
-	return currentAnswersArray.indexOf(reversedNumber) === -1;  // is not repeated?
-}
-
 module.exports = invertAnswer;

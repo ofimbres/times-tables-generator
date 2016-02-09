@@ -16,7 +16,7 @@ var mochaPhantomjs = require('gulp-mocha-phantomjs');
 
 gulp.task('lint-client', function() {
 	//return gulp.src('./app/**/*.js')
-	return gulp.src('./app/scripts/times-table-generator/**/*.js')
+	return gulp.src('./app/**/*.js')
 		.pipe(jshint())
 		.pipe(jshint.reporter('default'));
 });
@@ -34,16 +34,16 @@ gulp.task('test', function() {
 
 //http://atendesigngroup.com/blog/gulp-browserify-and-error-handling
 gulp.task('browserify-client', ['lint-client'], function() {
-	return browserify('./app/scripts/times-table-generator/index.js')
+	return browserify('./app/index.js')
 		.bundle()
-		.pipe(source('bundle.js'))
+		.pipe(source('times-tables-generator.js'))
 		.pipe(gulp.dest('build'));
 });
 
 gulp.task('browserify-test', ['lint-test'], function() {
 	return browserify('./test/mocha-main.js')
 		.bundle()
-		.pipe(source('client-test.js'))
+		.pipe(source('times-tables-generator-test.js'))
 		.pipe(gulp.dest('build'));
 });
 

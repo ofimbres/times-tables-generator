@@ -1,5 +1,5 @@
-var answerSelector = require('../../app/scripts/times-table-generator/answerSelector');
-var utils = require('../../app/scripts/times-table-generator/utils');
+var answerSelector = require('../../app/answerSelector');
+var utils = require('../../app/utils');
 var assert = require('chai').assert;
 
 module.exports = function() {
@@ -14,11 +14,12 @@ module.exports = function() {
 
 				utils.bubbleSort(answersArray);
 
-				for (var i = 0; i < answersArray.length - 1; i++) {
+				var i;
+				for (i = 0; i < answersArray.length - 1; i++) {
 					assert.notEqual(answersArray[i], answersArray[i + 1]);
 				}
 
-				for (var i = 0; i < answersArray.length; i++) {
+				for (i = 0; i < answersArray.length; i++) {
 					assert.isAbove(answersArray[i], problem.x * 2 - 1);
 					assert.isBelow(answersArray[i], problem.x * 9 + 1);
 				}

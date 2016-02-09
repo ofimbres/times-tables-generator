@@ -1,5 +1,5 @@
 'use strict';
 
-require('./times-table-generator-test/utils.spec')();
-require('./times-table-generator-test/answer-generators.spec')();
-require('./times-table-generator-test/answerSelector.spec')();
+require('./scripts/utils.spec')();
+require('./scripts/answer-generators.spec')();
+require('./scripts/answerSelector.spec')();

@@ -1,4 +1,4 @@
-var utils = require('../../app/scripts/times-table-generator/utils');
+var utils = require('../../app/utils');
 var assert = require('chai').assert;
 
 module.exports = function() {
