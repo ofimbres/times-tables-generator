@@ -1,5 +1,4 @@
-var utils = require('./utils'),
-	answerSelector = require('./answerSelector');
+var utils = require('../utils');
 
 function generateUniqueFacts(quantity) {
 	var from = 2, to = 9;
@@ -14,9 +13,9 @@ function generateUniqueFacts(quantity) {
 
 	utils.shuffle(factors);
 
-	for (var i = 0; i < quantity; i++) {
+	/*for (var i = 0; i < quantity; i++) {
 		factors[i].answers = answerSelector(factors[i]);
-	}
+	}*/
 
 	return factors;
 }

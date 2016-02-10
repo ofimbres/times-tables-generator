@@ -22,9 +22,6 @@
     "vinyl-source-stream": "^1.1.0",
     "vinyl-transform": "^1.0.0"
   },
-  "browser": {
-    "jquery": "./vendors/jquery/dist/jquery.js"
-  },
   "browserify-shim": {
     "jquery": "$"
   },
