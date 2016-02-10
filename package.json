@@ -21,13 +21,5 @@
     "mocha": "^2.3.4",
     "vinyl-source-stream": "^1.1.0",
     "vinyl-transform": "^1.0.0"
-  },
-  "browserify-shim": {
-    "jquery": "$"
-  },
-  "browserify": {
-    "transform": [
-      "browserify-shim"
-    ]
   }
 }
