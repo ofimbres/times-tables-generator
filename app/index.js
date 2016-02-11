@@ -3,7 +3,7 @@ var levelSelector = require('./levelSelector'),
 
 function timesTablesGenerator() {
 	var quantity = 10;
-	var level = 'unique-facts';
+	var level = 'uniqueFacts';
 
 	var problems = levelSelector(level, quantity);
 
@@ -15,3 +15,5 @@ function timesTablesGenerator() {
 }
 
 module.exports = timesTablesGenerator;
+
+console.log(timesTablesGenerator());

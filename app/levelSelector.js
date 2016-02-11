@@ -4,7 +4,7 @@ function levelSelector(level, quantity) {
 	var problems;
 
 	switch (level) {
-		case 'uniq-facts':
+		case 'uniqueFacts':
 			problems = levels.uniqueFacts(quantity);
 			break;
 		default: throw Error(level + ' level not exists');

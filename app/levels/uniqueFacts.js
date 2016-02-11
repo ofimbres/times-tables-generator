@@ -1,6 +1,6 @@
 var utils = require('../utils');
 
-function generateUniqueFacts(quantity) {
+function uniqueFacts(quantity) {
 	var from = 2, to = 9;
 	var factors = [];
 
@@ -17,7 +17,7 @@ function generateUniqueFacts(quantity) {
 		factors[i].answers = answerSelector(factors[i]);
 	}*/
 
-	return factors;
+	return factors.slice(0, 10);
 }
 
-module.exports = generateUniqueFacts;
+module.exports = uniqueFacts;
