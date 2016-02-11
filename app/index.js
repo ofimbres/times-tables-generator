@@ -15,5 +15,3 @@ function timesTablesGenerator() {
 }
 
 module.exports = timesTablesGenerator;
-
-console.log(timesTablesGenerator());

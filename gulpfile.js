@@ -34,7 +34,9 @@ gulp.task('test', function() {
 
 //http://atendesigngroup.com/blog/gulp-browserify-and-error-handling
 gulp.task('browserify-client', ['lint-client'], function() {
-	return browserify('./app/index.js')
+	return browserify('./app/index.js', {
+			standalone: 'timesTablesGenerator'
+		})
 		.bundle()
 		.pipe(source('times-tables-generator.js'))
 		.pipe(gulp.dest('build'));
